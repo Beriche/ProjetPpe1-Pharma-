@@ -1,0 +1,45 @@
+
+/*le slide principale pour mettre le tout dans une seul image*/ 
+	.slider {
+		/*pour que les image reste a cote quelque soit la taille de l'ecran on multiplie la taille des image * le nombre*/
+		
+		width: 500px;
+		height: 300px;
+		overflow: hidden;
+		margin: 150px auto;
+		overflow: hidden;
+	
+	}
+	.slides {
+		width: calc(500px * 3);
+		animation: glisse 10s infinite;
+	}
+	.slide {
+		float:left;
+		
+	}
+
+	@keyframes glisse {
+		0% {
+			transform: translateX(0);
+		}
+		10% {
+			transform: translateX(0);
+		}
+			/*pour que l'image va vers la gauche*/
+		33% {
+			transform: translateX(-500px);
+		}
+		43% {
+			transform: translateX(-500px);
+		}
+		66% {
+			transform: translateX(-1000px);
+		}
+		76% {
+			transform: translateX(-1000px);
+		}/*la fin pour que l'image retourne au debut */
+		100% {
+			transform: translateX(0);
+		}
+	}

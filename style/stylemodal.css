@@ -1,0 +1,76 @@
+
+	.box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+
+	.modal {
+		position: fixed;
+
+		opacity: 0;
+		visibility: hidden;
+
+		transition: 0.4s;
+	}
+
+	/*
+		PLACE A LA MAGIE
+	*/
+
+	button:focus + .modal {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+
+
+	/*
+		Style pour rendre l'effet sympa.
+		Pas nécessaire pour créer le modal.
+	*/
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #EEEEEE;
+			color: #1d1d1d;
+		}
+		.box {
+			font-family: 'Roboto', sans-serif;
+		}
+		button {
+			width: 33%;
+			background-color: #2196F3;
+			font-family: 'Roboto', sans-serif;
+			font-size: 24px;
+			border: none;
+			border-radius: 4px;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.modal {
+			width: 50%;
+			height: 70vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			background-color: white;
+			border-radius: 4px;
+			box-shadow: 0px 30px 70px rgba(0,0,0,0.3);
+		}
+		span {
+	  	position: absolute;
+	  	bottom: 30px;
+	  	right: 50px;
+	  	font-size: 20px;
+	  	cursor: pointer;
+	  	font-weight: bold;
+	  	color: #2196F3;
+	  }
+	  span:hover {
+	    color: #2b8fdb;
+	  }

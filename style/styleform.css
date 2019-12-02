@@ -1,0 +1,92 @@
+.formulaire{
+	background-color: lightgrey;
+	padding: 15px;
+	width: 350px; 
+	font-weight: bold;
+	color: green;
+}
+.fieldset {
+ padding:0 160px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid lightgreen;
+ }
+.conn{
+background-color: white;
+}
+.conn input{
+	font-weight: bold;
+   display:block;
+   /*pour separe les input mettre un ecart*/
+   margin-bottom: 10px: 
+  
+}
+
+/*deux champs de texte mail et mdp*/
+.inputbasic{
+  font-weight: bold;
+  border: 1.5px solid grey;
+  border-radius: 3px;
+/* on va mettre de la marge interieur pour que les input sois un peut plus gros*/
+  padding:6px;
+  /* on anime le tous*/
+  transition: all 0.5s ease ; 
+
+}
+
+/* on uttilise l'attribut focus pour que quand on clic dessus on puisse mettre un effet*/ 
+.inputbasic:focus{
+
+border-radius: 5px;
+border-color: slateblue;
+
+
+}
+/*on va ajouter et styliser l'icone du mail qu'on va integre dans le champs mail*/
+.mail{
+		/*on va donne le chemin qui mene vers l'image*/
+	background-image: url("./iconemail.png");
+	/*pour que l'image ne se repette pas*/
+	background-repeat: no-repeat;
+	/*pour pouvoir centre l'image en jouant sur les niveau*/
+	background-position: 3px 5px  ;
+	/*marge du text par a poot a la gauche*/
+	padding-left: 40px;
+	/*on regle ici la taille de l'image*/
+	background-size: 10px: 
+}
+/*on va ajouter et styliser l'icone de mot de passe qu'on va integre dans le champs mdp*/
+.mdp{
+	/*on va donne le chemin qui mene vers l'image*/
+	background-image: url("./iconecadena.jpg");
+	background-repeat: no-repeat;
+	/*pour pouvoir centre l'image en jouant sur les niveau*/
+	background-position: 3px 5px  ;
+	/*marge du text par a poot a la gauche*/
+	padding-left: 40px;
+	/*on regle ici la taille de l'image*/
+	background-size: 10px: 
+}
+
+/*on va stylser le bouton de connexion*/
+.conn input[type=submit]{
+	font-weight: bold;
+    background-color: lightgreen;
+    border: 1px solid slateblue;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.8s ease;
+
+}
+/*l'attribut hover permet de faire stylise notre bouton quand on le survole */
+.conn input[type=submit]:hover{
+ background-color: slateblue;
+ color: white;
+ border-radius: 140px;
+ cursor: pointer;
+
+} 
+.conn input[placeholder]{
+	color: green;
+
+}
